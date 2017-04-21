@@ -11,7 +11,7 @@ module.exports = function(options) {
     options = options || {};
     options.CNODE_KEY = options.CNODE_KEY || 'fD*Sf4YF2^$%';
 
-    process.env.CNODE_KEY = options.CNODE_KEY;
+    cnode.setKey(options.CNODE_KEY);
 
     var basePath, mainPath, mainName, extName, pathName;
 
@@ -23,7 +23,7 @@ module.exports = function(options) {
     };
 
     function process(content, push, callback) {
-        var result = jse.pack(content);
+        var result = cnode.pack(content);
         var file = createFile(mainName, result);
         push(file);
         callback();

@@ -1,10 +1,10 @@
 {
     "name": "gulp-extension-cnode",
-    "version": "0.0.1",
+    "version": "0.0.4",
     "description": "Replaces references of js/css/img to rev version filenames into HTML files.",
     "main": "index.js",
     "dependencies": {
-        "extension-cnode": "^0.0.1",
+        "extension-cnode": "^0.0.2",
         "gulp-util": "~2.2.14",
         "through2": "~0.4.1"
     },
